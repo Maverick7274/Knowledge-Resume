@@ -99,6 +99,11 @@ h1
     opacity: 1;
 }
 
+#timeline ul li.show::after
+{
+    background: var(--supplementary-color2);
+}
+
 /* Dots */
 
 #timeline ul li::after
