@@ -72,6 +72,8 @@ h1
     padding: 1rem;
     background:var(--supplementary-color4) ;
     transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
 }
 
 /* Right Side */
@@ -79,11 +81,22 @@ h1
 #timeline ul li:nth-child(odd) div
 {
     left: 40px;
+    transform: translate(200px, 0);
 }
 
 #timeline ul li:nth-child(even) div
 {
     left: -460px;
+    transform: translate(200px, 0);
+}
+
+/* Show Boxes */
+
+#timeline ul li.show div
+{
+    transform: none;
+    visibility: visible;
+    opacity: 1;
 }
 
 /* Dots */
